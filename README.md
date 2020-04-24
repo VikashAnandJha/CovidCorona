@@ -2,7 +2,10 @@
 Latest COVID-19 STATS
 Based on API by Covid19India.org
 
-#Features
-Shows Updated Stats on Notification Bar
-Works in background also
-Alerts if New data arrives
+<h1>Features</h1>
+<ul>
+  <li>
+Shows Updated Stats on Notification Bar</li>
+  <li>Works in background also</li>
+  <li>Alerts if New data arrives</li>
+  </ul>
