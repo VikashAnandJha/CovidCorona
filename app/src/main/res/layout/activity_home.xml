@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".HomeActivity">
+
+
+
+
+<ImageView
+    android:layout_width="250dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:src="@drawable/covidcoronalogo"
+    />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=" REFRESH"
+        android:background="@color/colorgreen"
+        android:drawableLeft="@drawable/refresh"
+        android:padding="10dp"
+        android:id="@+id/refreshBtn"
+        android:layout_margin="20dp"
+
+        />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:progress="25"
+        android:indeterminate="true"
+style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progressBar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:id="@+id/mainArea"
+
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Confirmed"
+                android:textSize="18dp"
+                android:textColor="@color/colorwhite"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+00"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center"
+                android:id="@+id/tvDeltaCnf"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="20dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorred"
+                android:id="@+id/tvCnf"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total ACTIVE"
+                android:textSize="18dp"
+                android:textColor="@color/colorwhite"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+00"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="20dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorgreen"
+                android:id="@+id/tvActive"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total DEATHS"
+                android:textSize="18dp"
+                android:textColor="@color/colorwhite"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+00"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center"
+                android:id="@+id/tvDeltaDeath"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="20dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorred"
+                android:id="@+id/tvDeath"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Last Updated On: "
+            android:textColor="@color/colorwhite"
+            android:layout_margin="10dp"
+            android:id="@+id/tvLastUpdatedTime"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Based On API by Covid19India.org \n Data Shown Here For INDIA Only "
+            android:textColor="@color/colorwhite"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
